@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/* Mixins do projeto */
+.bg-footer{
+    background-color: $bgRenan;
+}
+
+.title-blog, .warning-found, .title-results{
+    color: #0790B3;
+    font-size: 1.5rem !important;
+}
+
+.title-header{
+    font-size: 2.2rem !important;
+}
+
+.social-navbar{
+    .nav-item{
+        .nav-link{
+            color: #fff !important;
+            font-size: 2.25rem;
+            transition: .2s;
+            &:hover{
+                color: #FF8514 !important;
+            }
+        }
+    }
+}
+
+.nav-transparent{
+    background-color: $bgTransparent;
+    transition: .2s;
+    .container{
+        .collapse{
+            .navbar-top{
+                .nav-item{
+                    list-style: none;
+                    .nav-link{
+                        text-decoration: none;
+                        color: #FFF;
+                        transition: .2s;
+                        &:hover{
+                            box-shadow: 0px 4px #15D1FF;
+                        }
+                    }
+                }
+                .active{
+                    .nav-link{
+                        color: #FF8514 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar-right{
+    .nav-item{
+        .nav-link{
+            padding: .10rem .25rem !important;
+            font-family: 'Roboto', sans-serif !important;
+            font-size: 1.20rem !important;
+            color: #0790B3 !important;
+            transition: .2s;
+            &:hover{
+                color: #15D1FF !important;
+            }
+        }
+    }
+    .active{
+        .nav-link{
+            color: #FF8514 !important;
+        }
+    }
+}
+
+.nav-light{
+    background-color: $bgNavbar;
+    .container{
+        .collapse{
+            .navbar-top{
+                .nav-item{
+                    list-style: none;
+                    .nav-link{
+                        text-decoration: none;
+                        color: #15D1FF !important;
+                        transition: .2s;
+                        &:hover{
+                            box-shadow: 0px 4px #15D1FF;
+                        }
+                    }
+                }
+                .active{
+                    .nav-link{
+                        color: #FF8514 !important;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+
+.light-logo{
+    background-image: url('../icons/logo-renan-branca.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.color-logo{
+    background-image: url('../icons/logo-renan.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 991.98px){
+    .nav-mobile{
+        background-color: $bgNavbar + !important;
+        .container{
+            .collapse{
+                .navbar-top{
+                    .nav-item{
+                        list-style: none;
+                        .nav-link{
+                            text-decoration: none;
+                            color: #15D1FF !important;
+                            transition: .2s;
+                            &:hover{
+                                box-shadow: 0px 4px #15D1FF;
+                            }
+                        }
+                    }
+                    .active{
+                        .nav-link{
+                            color: #FF8514 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .logo-mobile{
+        background-image: url('../icons/logo-renan.svg') !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .mobile-center{
+        align-items: center !important;
+        text-align: center !important;
+    }
+}
+
+/*
+##### Seção de apontamento para cabeçalhos #####
+*/
+.frontpage-header{
+    background-image: url('../images/frontpage-back.jpg') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-header{
+    background-image: url('../images/page-back.jpg') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.category-header, .archive-header{
+    background-image: url('../images/archive-back.jpg') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.search-header{
+    background-image: url('../images/search-back.jpg') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.post-header{
+    background-image: url('../images/post-back.jpg') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.error-header{
+    background-image: url('../images/error-back.jpg') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blog-header{
+    background-image: url('../images/blog-back.jpg') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.full-header{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    .mask{
+        background-color: rgba(0, 0, 0, 0.459);
+    }
+    
+}
+
+.navbar-toggler-icon{
+    display: inline !important;
+    .fas{
+        color: #15D1FF !important;
+    }
+}
+
+.title-sidebar{
+    color: #FF8514 !important;
+    font-size: 1.4rem !important;
+}
+
+.logo-size{
+    width: 166px !important;
+    height: 40px !important;
+}
+
+.navbar-nav{
+    .nav-item{
+        .nav-link{
+            font-family: 'Roboto', sans-serif !important;
+        }
+    }
+}
+
+.custom-card{
+    .card-title{
+        font-size: 1.4rem !important;
+    }
+    .card-subtitle{
+        font-size: 1rem !important;
+    }
+    .card-text{
+        font-size: .9rem !important;
+    }
+}
+
+.navbar-cta{
+    .nav-item{
+        .nav-link{
+            border: 2px #FFF;
+            border-style: solid !important;
+            color: #FFF;
+            transition: .2s;
+            &:hover{
+                color: #15D1FF;
+                border-color: #15D1FF;
+            }
+        }
+    }
+    .active{
+        .nav-link{
+            color: #FF8514 !important;
+            border-color: #FF8514 !important;
+        }
+    }
+}
+
+.navbar-top{
+    .nav-item{
+        .nav-link{
+            margin-left: 1rem !important;
+        }
+    }
+}

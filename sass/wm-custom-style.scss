@@ -1,0 +1,9 @@
+/* Código interno sass para modificações extras no template */
+@import 'vars/wm-vars';
+@import 'mixins/wm-mixins';
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body, header, main, footer, section, aside, input, textarea, form, span, ol, ul, li, button, h1, h2, h3, h4, h5, h6, p, a{
+    font-family: 'Lato', sans-serif !important;
+}
